@@ -15,10 +15,10 @@ mongoose.connect(process.env.MONGODB, {useNewUrlParser : true, useUnifiedTopolog
 
 //Config
 var corsOptions = {
-    origin : 'http://localhost:3000',
+    origin : 'https://fullstackfrontendcourse.herokuapp.com/',
     optionsSuccessStatus : 200
 }
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 //Models
